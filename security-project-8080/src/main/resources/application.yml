@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: security-project
+
+  output:
+    ansi:
+      enabled: always
+
+  security:
+    user:
+      name: pravin
+      password: pk

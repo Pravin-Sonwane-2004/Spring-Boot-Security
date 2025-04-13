@@ -1,0 +1,10 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: web-client
+
+  output:
+    ansi:
+      enabled: always
+  
