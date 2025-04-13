@@ -1,0 +1,30 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: security-login_register
+
+  output:
+    ansi:
+      enabled: always
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Security_Login
+    username:  postgres
+    password: 3333
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # use 'validate', 'create', 'create-drop', or 'none' as needed
+    show-sql: true        # shows SQL queries in logs
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # Optional: to format SQL output
+    open-in-view: true
+
+logging:
+  level:
+    org.springframework.security: DEBUG
