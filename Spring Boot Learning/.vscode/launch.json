@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ProjectApplication",
+      "request": "launch",
+      "mainClass": "com.pk.project.ProjectApplication",
+      "projectName": "project"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientApplication<client>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.pravin.client.ClientApplication",
+      "projectName": "client",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

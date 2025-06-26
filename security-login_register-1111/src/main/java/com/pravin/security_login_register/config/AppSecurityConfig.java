@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.pravin.security_login_register.service.CustomerService;
 
@@ -49,6 +50,7 @@ public class AppSecurityConfig {
               .anyRequest()
               .authenticated();
         })
+        .addFilterBefore( null, UsernamePasswordAuthenticationFilter.class)
         .authenticationProvider(authenticationProvider());
     return httpSecurity.csrf((csrf) -> csrf.disable()).build();
   }

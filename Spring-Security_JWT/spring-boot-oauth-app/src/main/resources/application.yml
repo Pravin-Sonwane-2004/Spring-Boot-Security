@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-oauth-app
+
+  output:
+    ansi:
+      enabled: always 
+
+  security:
+      oauth2:
+        client:
+          registration:
+            github:
+              client-id:  Ov23liKRZrKHeHrM53pb
+              client-secret: d4e0588c75beefbdcf4757c6e03a5329af05e0d8
+             

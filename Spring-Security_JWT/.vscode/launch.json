@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<53_Security_Register_Login>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "in.ashokit.Application",
+      "projectName": "53_Security_Register_Login",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
